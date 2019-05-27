@@ -1,0 +1,43 @@
+void setup() {
+  pinMode(D1, OUTPUT); //Set D1 Pin for RED
+  pinMode(D2, OUTPUT); //Set D2 Pin for GREEN
+  pinMode(D3, OUTPUT); //Set D3 Pin for BLUE
+}
+
+void loop() {
+  //Change RGB To Red
+  digitalWrite(D1,HIGH);
+  digitalWrite(D2,LOW);
+  digitalWrite(D3,LOW);
+  delay(1000); //Delay 1 sec
+  
+  //Change RGB To Yellow 
+  digitalWrite(D1,HIGH);
+  digitalWrite(D2,HIGH);
+  digitalWrite(D3,LOW);
+  delay(1000); //Delay 1 sec
+  
+  //Change RGB To Green
+  digitalWrite(D1,LOW);
+  digitalWrite(D2,HIGH);
+  digitalWrite(D3,LOW);
+  delay(1000); //Delay 1 sec
+
+  //Change RGB To Sky blue
+  digitalWrite(D1,LOW);
+  digitalWrite(D2,HIGH);
+  digitalWrite(D3,HIGH);
+  delay(1000); //Delay 1 sec
+  
+  //Change RGB To Blue
+  digitalWrite(D1,LOW);
+  digitalWrite(D2,LOW);
+  digitalWrite(D3,HIGH);
+  delay(1000); //Delay 1 sec
+
+  //Change RGB To Pink
+  digitalWrite(D1,HIGH);
+  digitalWrite(D2,LOW);
+  digitalWrite(D3,HIGH);
+  delay(1000); //Delay 1 sec 
+}
